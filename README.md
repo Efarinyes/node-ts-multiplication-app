@@ -1,7 +1,6 @@
 # node-ts-multiplication-app
 
-Aplicació de consola per generar taules de multiplicacions.
-
+Aplicació de consola per generar taules de multiplicar.
 
 Principis de Clean code.
 
