@@ -29,7 +29,7 @@ export const yarg = yargs(hideBin(process.argv))
         describe: 'fcile-name'
     })
     .option('d', {
-        alias: 'destination',
+        alias: 'fileDestination',
         type: 'string',
         default: 'outputs',
         describe: 'file destination'
