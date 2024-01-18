@@ -7,18 +7,18 @@ describe('SaveFileUseCase', () => {
 
     const customOptions = {
         fileContent: 'custom-content',
-        destination: 'custom-outputs',
+        fileDestination: 'custom-outputs/file-destination',
         fileName: 'custom-table-name'
     }
 
-    const customFilePath = `${customOptions.destination}/${customOptions.fileName}.txt`;
+    const customFilePath = `${customOptions.fileDestination}/${customOptions.fileName}.txt`;
 
     afterEach( () => {
         const outputFolderExist = fs.existsSync('outputs');
         if (outputFolderExist) fs.rmSync('outputs', { recursive: true });
 
-        const customOutputFolderExist = fs.existsSync(customOptions.destination);
-        if (customOutputFolderExist ) fs.rmSync(customOptions.destination, { recursive: true });
+        const customOutputFolderExist = fs.existsSync(customOptions.fileDestination);
+        if (customOutputFolderExist ) fs.rmSync(customOptions.fileDestination, { recursive: true });
         
     })
 
